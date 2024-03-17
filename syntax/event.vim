@@ -6,6 +6,9 @@ if exists("b:current_syntax")
   finish
 endif
 
+syn keyword evPush PUSH
+syn keyword evPop POP
+
 syn match evNumber '\$[a-fA-F0-9]\+'
 syn match evNumber '\<\(0x[a-fA-F0-9]\+\|\d\+\)\>'
 syn match evNumber '\<[01]\+b\>'
@@ -29,3 +32,5 @@ hi def link evCondition Conditional
 hi def link evInclude Macro
 hi def link evLabel Function
 hi def link evRaw StorageClass
+hi def link evPush Tag
+hi def link evPop Tag
